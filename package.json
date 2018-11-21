@@ -8,6 +8,7 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
+        "lib": "ng build polpware-ngx-form-lib",
         "pack": "cd dist/polpware-ngx-form && npm pack"
     },
     "private": true,
