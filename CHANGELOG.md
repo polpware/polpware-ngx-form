@@ -1,3 +1,11 @@
+## 0.1.2 (November 27, 2018)
+  - Improve normalizeUrl and normalizeHost
+  - Update package
+  - Bump package version
+  - More toolkit
+  - Introduce version toolkit
+  - Publish under dist
+
 ## 0.1.1 (November 21, 2018)
 
 
