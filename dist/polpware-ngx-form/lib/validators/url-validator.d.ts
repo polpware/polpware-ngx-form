@@ -26,8 +26,8 @@ export declare function validateUrl(value: string, parseQuery: boolean): IInvali
 * The returned host includes host number.
 * {} string
 */
-export declare function normalizeHost(s: string): string;
-export declare function normalizeUrl(s: string): string;
+export declare function normalizeHost(s: string, rm3w?: boolean): string;
+export declare function normalizeUrl(s: string, keepQuery?: boolean, endWithSlash?: boolean): string;
 export declare function buildUrlValidator(options?: {
     https?: boolean;
     parseQuery?: boolean;
