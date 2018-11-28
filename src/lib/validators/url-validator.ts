@@ -49,20 +49,45 @@ export function validateUrl(value: string, parseQuery: boolean): IInvalidSpec | 
 * The returned host includes host number. 
 * {} string
 */
-export function normalizeHost(s: string) {
+export function normalizeHost(s: string, rm3w: boolean = true) {
     // Assume that s is a valid url
     const results = new Url(s) as IUrlParseResult;
-    const h = results.host;
+    let h = results.host;
     if (h.startsWith('www')) {
-        return h.substring(4);
+        if (rm3w) {
+            h = h.substring(4);
+        }
+    } else {
+        if (!rm3w) {
+            h = 'www.' + h;
+        }
     }
+
     return h;
 }
 
-export function normalizeUrl(s: string) {
+export function normalizeUrl(s: string, keepQuery: boolean = false, endWithSlash: boolean = false) {
     // Assume that s is a valid url
+
     const results = new Url(s) as IUrlParseResult;
-    return results.toString();
+    let path = results.pathname;
+    path = path.replace(/\/\//g, '/', );
+    let u = results.protocol + '//' + results.host + path;
+    if (keepQuery) {
+        u = u + results.query;
+    }
+
+    if (u.endsWith('/')) {
+        if (!endWithSlash) {
+            u = u.substr(0, u.length - 1);
+        }
+    } else {
+        if (endWithSlash) {
+            u = u + '/';
+        }
+    }
+
+    return u;
 }
 
 // Type predicate 

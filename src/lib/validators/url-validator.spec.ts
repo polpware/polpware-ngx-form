@@ -30,12 +30,19 @@ describe('urlValidator', () => {
 
     });
 
-    it('Normalize does not remove last forward slash', () => {
+    it('Normalize does remove last forward slash', () => {
         const v = normalizeUrl('http://PeerOffers.com/');
 
-        expect(v).toBe('http://peeroffers.com/');
+        expect(v).toBe('http://peeroffers.com');
 
     });
+
+    it('Normalize remove //', () => {
+        const v = normalizeUrl('http://PeerOffers.com//mytest//');
+
+        expect(v).toBe('http://peeroffers.com/mytest');
+    });
+
 
     it('host name', () => {
         const v = Url('http://PeerOffers.com/');
