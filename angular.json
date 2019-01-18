@@ -8,7 +8,11 @@
             "sourceRoot": "src",
             "projectType": "application",
             "prefix": "app",
-            "schematics": {},
+            "schematics": {            
+                "@schematics/angular:component": {
+                    "styleext": "css"
+                }
+            },
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
@@ -43,7 +47,14 @@
                             "aot": true,
                             "extractLicenses": true,
                             "vendorChunk": false,
-                            "buildOptimizer": true
+                            "buildOptimizer": true,
+                            "budgets": [
+                                {
+                                    "type": "initial",
+                                    "maximumWarning": "2mb",
+                                    "maximumError": "5mb"
+                                }
+                            ]
                         }
                     }
                 },
@@ -124,7 +135,7 @@
                 }
             }
         },
-        "polpware-ngx-form-lib": {
+        "@polpware/ngx-form": {
             "root": "",
             "sourceRoot": "src",
             "projectType": "library",
