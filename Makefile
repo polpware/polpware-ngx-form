@@ -1,10 +1,10 @@
-BuildDist := ./dist
+BuildDist := ./dist/@polpware/ngx-form
 BuildDoc := ./docs
 DeployTarget := ./deployment/polpware-ngx-form
 
 build:
 	echo "Build ..."
-	npm run build
+	npm run lib
 	echo "Build done"
 
 copy:
@@ -36,7 +36,7 @@ push:
 	cd $(DeployTarget) && git push
 	echo "Push done"
 
-deploy: build copy doc push
+deploy: build copy push
 
 
 .PHONY: build copy doc push deploy
