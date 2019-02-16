@@ -1,3 +1,3 @@
 [submodule "delployment/polpware-ngx-form"]
-	path = delployment/polpware-ngx-form
+	path = deployment/polpware-ngx-form
 	url = https://github.com/polpware-frontend-modules/polpware-ngx-form.git
