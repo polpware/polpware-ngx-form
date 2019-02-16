@@ -1,3 +1,17 @@
+## 7.0.0 (February 16, 2019)
+  - Update script for version bumper
+  - Script
+  - Remve dist
+  - Script
+  - Introduce deployment submodule
+  - new publish
+  - Remove old publication
+  - Fix package name
+  - Review angular json
+  - Migrate from Angular 6 to 7
+  - Update publish version
+  - Bump version
+
 ## 0.1.2 (November 27, 2018)
   - Improve normalizeUrl and normalizeHost
   - Update package
