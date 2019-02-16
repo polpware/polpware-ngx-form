@@ -10,7 +10,8 @@
         "e2e": "ng e2e",
         "lib": "ng build @polpware/ngx-form",
         "pack": "cd dist/@polpware/ngx-form && npm pack",
-        "doc": "gulp doc"      
+        "doc": "gulp doc",
+        "bump": "gulp bump"
     },
     "private": true,
     "dependencies": {},
