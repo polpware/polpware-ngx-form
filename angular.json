@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-            "aot": true,
+                        "aot": true,
                         "outputPath": "dist/ngx-form-host",
                         "index": "src/index.html",
                         "main": "src/main.ts",
@@ -55,10 +55,10 @@
                                     "maximumWarning": "2mb",
                                     "maximumError": "5mb"
                                 },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
+                                {
+                                    "type": "anyComponentStyle",
+                                    "maximumWarning": "6kb"
+                                }
                             ]
                         }
                     }
@@ -140,24 +140,44 @@
                 }
             }
         },
-        "@polpware/ngx-form": {
-            "root": "",
-            "sourceRoot": "src",
+        "@polpware/ngx-input-validators": {
             "projectType": "library",
-            "prefix": "polp",
+            "root": "projects/polpware/ngx-input-validators",
+            "sourceRoot": "projects/polpware/ngx-input-validators/src",
+            "prefix": "lib",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-ng-packagr:build",
                     "options": {
-                        "tsConfig": "tsconfig.lib.json",
-                        "project": "ng-package.json"
+                        "tsConfig": "projects/polpware/ngx-input-validators/tsconfig.lib.json",
+                        "project": "projects/polpware/ngx-input-validators/ng-package.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "tsConfig": "projects/polpware/ngx-input-validators/tsconfig.lib.prod.json"
+                        }
                     }
-                ,          "configurations": {
-            "production": {
-              "tsConfig": "tsconfig.lib.prod.json"
-            }
-          }
-}
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/polpware/ngx-input-validators/src/test.ts",
+                        "tsConfig": "projects/polpware/ngx-input-validators/tsconfig.spec.json",
+                        "karmaConfig": "projects/polpware/ngx-input-validators/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "projects/polpware/ngx-input-validators/tsconfig.lib.json",
+                            "projects/polpware/ngx-input-validators/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
             }
         }
     },
