@@ -10,13 +10,14 @@
             "prefix": "app",
             "schematics": {            
                 "@schematics/angular:component": {
-                    "styleext": "css"
+                    "style": "css"
                 }
             },
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
+            "aot": true,
                         "outputPath": "dist/ngx-form-host",
                         "index": "src/index.html",
                         "main": "src/main.ts",
@@ -53,7 +54,11 @@
                                     "type": "initial",
                                     "maximumWarning": "2mb",
                                     "maximumError": "5mb"
-                                }
+                                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
                             ]
                         }
                     }
@@ -147,7 +152,12 @@
                         "tsConfig": "tsconfig.lib.json",
                         "project": "ng-package.json"
                     }
-                }
+                ,          "configurations": {
+            "production": {
+              "tsConfig": "tsconfig.lib.prod.json"
+            }
+          }
+}
             }
         }
     },
