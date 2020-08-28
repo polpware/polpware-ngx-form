@@ -8,8 +8,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "lib": "ng build @polpware/ngx-form",
-    "pack": "cd dist/@polpware/ngx-form && npm pack",
     "doc": "gulp doc",
     "bump": "gulp bump"
   },
