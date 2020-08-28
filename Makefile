@@ -1,42 +1,9 @@
-BuildDist := ./dist/@polpware/ngx-form
+# deployment
+
+
+BuildDist := ./dist/polpware/$(Project)
 BuildDoc := ./docs
-DeployTarget := ./deployment/polpware-ngx-form
+BuildTarget := @polpware/$(Project)
+DeployTarget := ./deployment/polpware-$(Project)
 
-build:
-	echo "Build ..."
-	npm run lib
-	echo "Build done"
-
-copy:
-	echo "Clean old files ..."
-	cd $(DeployTarget) && find . -path ./.git -prune -o -name "README.md" -prune -o -type f -exec rm {} \;
-	echo "Clean old files done"
-	echo "Copy files ..."
-	cp -r $(BuildDist)/* $(DeployTarget)/
-	echo "Copy files done"
-
-
-doc:
-	echo "Build doc ..."
-	npm run doc
-	echo "Build doc done"
-	echo "Copy doc ..."
-	mkdir -p $(DeployTarget)/docs
-	cp -r $(BuildDoc)/* $(DeployTarget)/docs/
-	echo "Copy doc done"
-
-push:
-	echo "Find new files ..."
-	cd $(DeployTarget) && find . -path ./.git -prune -o -name "README.md" -prune -o -type f -exec git add {} \;
-	echo "Find new files done"
-	echo "Commit ..."
-	cd $(DeployTarget) && git commit -am "New publish"
-	echo "Commit done ..."
-	echo "Push ..."
-	cd $(DeployTarget) && git push
-	echo "Push done"
-
-deploy: build copy push
-
-
-.PHONY: build copy doc push deploy
+include Makefile.deployment
