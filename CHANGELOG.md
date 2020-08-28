@@ -1,3 +1,17 @@
+## 9.0.0 (August 28, 2020)
+  - Submodule
+  - Makefile
+  - Building input validator module
+  - Renaming
+  - Packages
+  - project introduced
+  - Update package
+  - published
+  - Renaming
+  - Update version
+  - Update packages
+  - Fix script
+
 ## 7.0.0 (February 16, 2019)
   - Update script for version bumper
   - Script
