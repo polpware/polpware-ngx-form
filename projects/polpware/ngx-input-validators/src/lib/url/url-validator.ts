@@ -71,7 +71,7 @@ export function normalizeUrl(s: string, keepQuery: boolean = false, endWithSlash
 
     const results = new Url(s) as IUrlParseResult;
     let path = results.pathname;
-    path = path.replace(/\/\//g, '/', );
+    path = path.replace(/\/\//g, '/');
     let u = results.protocol + '//' + results.host + path;
     if (keepQuery) {
         u = u + results.query;
@@ -91,7 +91,7 @@ export function normalizeUrl(s: string, keepQuery: boolean = false, endWithSlash
 }
 
 // Type predicate 
-function isInvalidSpec(v: IUrlParseResult | IInvalidSpec): v is IInvalidSpec {
+export function isInvalidSpec(v: IUrlParseResult | IInvalidSpec): v is IInvalidSpec {
     return (<IInvalidSpec>v).invalid !== undefined;
 }
 
