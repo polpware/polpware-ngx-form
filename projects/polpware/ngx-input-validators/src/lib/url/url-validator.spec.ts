@@ -20,7 +20,7 @@ describe('urlValidator', () => {
 
         const v = validator(ctrl);
 
-        expect(v).toEqual({ invalid: true });
+        expect(v).toEqual({ url: 'Invalid URL' });
     });
 
     it('Normalize into lowercase', () => {

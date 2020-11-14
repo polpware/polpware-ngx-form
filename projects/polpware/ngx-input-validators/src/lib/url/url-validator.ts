@@ -22,7 +22,7 @@ export interface IUrlParseResult {
 }
 
 export interface IInvalidSpec {
-    invalid: boolean;
+    url: string;
 }
 
 export function validateUrl(value: string, parseQuery: boolean): IInvalidSpec | IUrlParseResult {
@@ -30,13 +30,13 @@ export function validateUrl(value: string, parseQuery: boolean): IInvalidSpec | 
     const pattern = '(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?';
     const expr = new RegExp(pattern);
     if (!expr.test(value)) {
-        return { invalid: true };
+        return { url: 'Invalid URL' };
     }
 
     const results = new Url(value, parseQuery) as IUrlParseResult;
 
     if (!results.protocol || !results.host) {
-        return { invalid: true };
+        return { url: 'Invalid URL' };
     }
 
     return results;
@@ -92,7 +92,7 @@ export function normalizeUrl(s: string, keepQuery: boolean = false, endWithSlash
 
 // Type predicate 
 export function isInvalidSpec(v: IUrlParseResult | IInvalidSpec): v is IInvalidSpec {
-    return (<IInvalidSpec>v).invalid !== undefined;
+    return (<IInvalidSpec>v).url !== undefined;
 }
 
 export function buildUrlValidator(options?: {
@@ -112,7 +112,7 @@ export function buildUrlValidator(options?: {
         }
 
         if (inputs.https && results.protocol !== 'https') {
-            return { invalid: true };
+            return { url: 'HTTPS Required' };
         }
 
         return null;
