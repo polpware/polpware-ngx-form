@@ -105,10 +105,15 @@ export function buildUrlValidator(options?: {
     return function(control: FormControl) {
         const value = control.value;
 
+        // Virtually true if there is no any value. 
+        if (!value) {
+            return null;
+        }
+
         const results = validateUrl(value, !!inputs.parseQuery);
 
         if (isInvalidSpec(results)) {
-            return results;
+            return results as IInvalidSpec;
         }
 
         if (inputs.https && results.protocol !== 'https') {
