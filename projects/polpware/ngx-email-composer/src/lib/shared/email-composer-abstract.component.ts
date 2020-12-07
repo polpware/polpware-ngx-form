@@ -2,7 +2,7 @@ import { ElementRef, ViewChild, Input, Output, EventEmitter } from '@angular/cor
 import { TagInputComponent } from 'ngx-chips';
 import { Observable } from 'rxjs';
 
-function isValidEmail(control: { value: any }) {
+export function isValidEmail(control: { value: any }) {
     const value = control.value;
     const re = /\S+@\S+\.\S+/;
     if (re.test(value)) {
@@ -82,6 +82,13 @@ export interface IEmailSenderInput {
     succeed?: boolean;
 }
 
+export interface IEmailComposerInput {
+    messageTitle?: string;
+    messageBody?: string;
+    autocompleteItemsAsync: Observable<Array<IAutoCompleteModel>>;
+    emails?: Array<any>;
+}
+
 export abstract class EmailFormAbstractComponent {
 
     @ViewChild('emailInputBox') emailInputBox: TagInputComponent;
@@ -126,6 +133,10 @@ export abstract class EmailFormAbstractComponent {
 
     public get isSubmitDisabled(): boolean {
         return this.emails.length === 0 || this.alertType === AlertTypeEnum.running;
+    }
+
+    public textChanged(evt: any) {
+        this.onTextChange.emit(evt);
     }
 
     public submit() {
