@@ -21,6 +21,10 @@
       "@polpware/ngx-input-validators": [
         "dist/polpware/ngx-input-validators/polpware-ngx-input-validators",
         "dist/polpware/ngx-input-validators"
+      ],
+      "@polpware/ngx-email-composer": [
+        "dist/polpware/ngx-email-composer/polpware-ngx-email-composer",
+        "dist/polpware/ngx-email-composer"
       ]
     }
   }

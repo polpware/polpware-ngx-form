@@ -179,6 +179,46 @@
                     }
                 }
             }
+        },
+        "@polpware/ngx-email-composer": {
+            "projectType": "library",
+            "root": "projects/polpware/ngx-email-composer",
+            "sourceRoot": "projects/polpware/ngx-email-composer/src",
+            "prefix": "polp",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "options": {
+                        "tsConfig": "projects/polpware/ngx-email-composer/tsconfig.lib.json",
+                        "project": "projects/polpware/ngx-email-composer/ng-package.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "tsConfig": "projects/polpware/ngx-email-composer/tsconfig.lib.prod.json"
+                        }
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/polpware/ngx-email-composer/src/test.ts",
+                        "tsConfig": "projects/polpware/ngx-email-composer/tsconfig.spec.json",
+                        "karmaConfig": "projects/polpware/ngx-email-composer/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "projects/polpware/ngx-email-composer/tsconfig.lib.json",
+                            "projects/polpware/ngx-email-composer/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
         }
     },
     "defaultProject": "ngx-form-host"
