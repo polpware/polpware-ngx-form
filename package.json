@@ -20,11 +20,13 @@
     "@angular/forms": "^9.1.12",
     "@angular/platform-browser": "^9.1.12",
     "@angular/platform-browser-dynamic": "^9.1.12",
+    "@polpware/fe-utilities": "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git",
     "core-js": "^3.1.4",
+    "ngx-chips": "2.2.0",
     "rxjs": "~6.6.2",
     "tslib": "^1.10.0",
-      "zone.js": "~0.10.2",
-    "url-parse": "^1.4.4"      
+    "url-parse": "^1.4.4",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.12",

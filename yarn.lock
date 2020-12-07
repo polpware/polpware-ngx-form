@@ -1050,6 +1050,12 @@
   dependencies:
     mkdirp "^1.0.4"
 
+"@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git":
+  version "9.0.0"
+  resolved "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#afd6f72610a164a4fa806ed8e8ae543318694fe8"
+  dependencies:
+    tslib "^1.10.0"
+
 "@rollup/plugin-commonjs@^11.0.2":
   version "11.1.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-commonjs/-/plugin-commonjs-11.1.0.tgz#60636c7a722f54b41e419e1709df05c7234557ef"
@@ -6090,6 +6096,21 @@ ng-packagr@^9.0.0:
     stylus "^0.54.7"
     terser "^4.3.8"
     update-notifier "^4.0.0"
+
+ng2-material-dropdown@0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/ng2-material-dropdown/-/ng2-material-dropdown-0.11.0.tgz#27a402ef3cbdcaf6791ef4cfd4b257e31db7546f"
+  integrity sha512-wptBo09qKecY0QPTProAThrc4A3ajJTcHE9LTpCG5XZZUhXLBzhnGK8OW33TN8A+K/jqcs7OB74ppYJiqs3nhQ==
+  dependencies:
+    tslib "^1.9.0"
+
+ngx-chips@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/ngx-chips/-/ngx-chips-2.2.0.tgz#47aab4017960a6579519f39acefa5bc2a61a7973"
+  integrity sha512-j0Rv+2t8C/p4z57KzstxLiQfgEkCCaL5ht6DZhNYUTe1ELZrEjmNrM0vSZ8G3IK9WFNadkcfXcOTjZvPTvxdBA==
+  dependencies:
+    ng2-material-dropdown "0.11.0"
+    tslib "^1.10.0"
 
 nice-try@^1.0.4:
   version "1.0.5"
