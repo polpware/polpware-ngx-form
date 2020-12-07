@@ -1,5 +1,6 @@
-import { ElementRef, ViewChild } from '@angular/core';
+import { ElementRef, ViewChild, Input, Output, EventEmitter } from '@angular/core';
 import { TagInputComponent } from 'ngx-chips';
+import { Observable } from 'rxjs';
 
 function isValidEmail(control: { value: any }) {
     const value = control.value;
@@ -59,14 +60,52 @@ export function parseOnlyEmails(addr_list: string) {
     return emails;
 }
 
+export interface IAutoCompleteModel {
+    value: any;
+    display: string;
+}
+
+export enum AlertTypeEnum {
+    none = 0,
+    info = 1,
+    warning = 2,
+    running = 3,
+    success = 4,
+    error = 5
+}
+
+export interface IEmailSenderInput {
+    confirmed?: boolean;
+    emailReceivers?: string[];
+    emailBody?: string;
+    emailTitle?: string;
+    succeed?: boolean;
+}
+
 export abstract class EmailFormAbstractComponent {
 
     @ViewChild('emailInputBox') emailInputBox: TagInputComponent;
     @ViewChild('emailBody') emailBody: ElementRef;
 
-    public title: string;
-
+    @Input()
+    public messageTitle: string;
+    @Input()
     public messageBody: string;
+    @Input()
+    autocompleteItemsAsync: Observable<Array<IAutoCompleteModel>>;
+    @Input()
+    sender: (a: IEmailSenderInput) => Promise<any>;
+    @Output()
+    onTextChange = new EventEmitter();
+    @Output()
+    onSubmit = new EventEmitter<IEmailSenderInput>();
+    @Output()
+    onSent = new EventEmitter<{ success: boolean }>();
+
+    alertMessage: string;
+    alertSubMessage: string;
+    alertType: AlertTypeEnum;
+    alertDismissible: boolean;
 
     public emails: Array<any>;
     public validators = [isValidEmail];
@@ -78,7 +117,7 @@ export abstract class EmailFormAbstractComponent {
 
     constructor() {
 
-        this.title = 'Send out an email';
+        this.messageTitle = 'Email title';
         this.emails = [];
         this.messageBody = '';
 
@@ -86,12 +125,54 @@ export abstract class EmailFormAbstractComponent {
     }
 
     public get isSubmitDisabled(): boolean {
-        return this.emails.length === 0;
+        return this.emails.length === 0 || this.alertType === AlertTypeEnum.running;
     }
 
-    public abstract onSubmit(): void;
+    public submit() {
+        const emails = [];
+
+        this.emails.forEach(elem => {
+
+            let x = elem || (elem.value);
+            const y = parseOnlyEmails(x);
+            y.forEach(m => {
+                emails.push(m);
+            });
+        });
+
+        const outputs: IEmailSenderInput = {
+            confirmed: true,
+            emailReceivers: emails,
+            emailBody: this.messageBody,
+            emailTitle: this.messageTitle
+        };
+
+        if (this.sender) {
+            this.alertType = AlertTypeEnum.running;
+            this.alertMessage = 'The email is being sent out.';
+            this.alertSubMessage = '';
+            this.alertDismissible = false;
+
+            this.sender(outputs).then(() => {
+                this.alertType = AlertTypeEnum.none;
+                this.onSent && this.onSent.emit({ success: true });
+            }, (error) => {
+                this.alertType = AlertTypeEnum.error;
+                this.alertMessage = 'Something went wrong.';
+                this.alertDismissible = true;
+                this.alertSubMessage = (error && error.errorInfo) ? error.errorInfo : '';
+                this.onSent && this.onSent.emit({ success: false });
+            });
+        }
+
+        this.onSubmit && this.onSubmit.emit(outputs);
+    }
 
     public onOutOfTagInput(evt: any) {
+
+        if (this.emailInputBox.dropdown && this.emailInputBox.dropdown.isVisible) {
+            return;
+        }
 
         if (this.disableFocusEvent) {
             return;
