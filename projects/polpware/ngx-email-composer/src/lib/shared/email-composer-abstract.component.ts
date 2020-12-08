@@ -120,11 +120,14 @@ export abstract class EmailFormAbstractComponent {
         'isValidEmail': 'Please input a valid email'
     };
 
+    // Control over the close button
+    public showCloseBtn: boolean;
+
     private disableFocusEvent: boolean;
 
     constructor() {
 
-        this.messageTitle = 'Email title';
+        this.messageTitle = '';
         this.emails = [];
         this.messageBody = '';
 
@@ -136,7 +139,12 @@ export abstract class EmailFormAbstractComponent {
     }
 
     public textChanged(evt: any) {
+        this.showCloseBtn = false;
         this.onTextChange.emit(evt);
+    }
+
+    public otherFieldChanged() {
+        this.showCloseBtn = false;
     }
 
     public submit() {
@@ -160,12 +168,16 @@ export abstract class EmailFormAbstractComponent {
 
         if (this.sender) {
             this.alertType = AlertTypeEnum.running;
-            this.alertMessage = 'The email is being sent out.';
+            this.alertMessage = 'The email is being sent out ...';
             this.alertSubMessage = '';
             this.alertDismissible = false;
 
             this.sender(outputs).then(() => {
-                this.alertType = AlertTypeEnum.none;
+                this.alertType = AlertTypeEnum.info;
+                this.alertMessage = 'Emails have been successfully sent out.';
+                this.alertDismissible = true;
+                this.showCloseBtn = true;
+
                 this.onSent && this.onSent.emit({ success: true });
             }, (error) => {
                 this.alertType = AlertTypeEnum.error;
