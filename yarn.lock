@@ -6104,6 +6104,11 @@ ng2-material-dropdown@0.11.0:
   dependencies:
     tslib "^1.9.0"
 
+ngx-bootstrap@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-bootstrap/-/ngx-bootstrap-6.0.0.tgz#58078243c30ab967c47bd0830703033480eb3f3e"
+  integrity sha512-uxDt9AZgh4mbVfgDJxLwBbcEEdQdYXrKvurrbuVuWpUnmUkHMi1Mvcb0RdBO2jcbWngKPb+Xokh7sn5Soy7TIQ==
+
 ngx-chips@2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/ngx-chips/-/ngx-chips-2.2.0.tgz#47aab4017960a6579519f39acefa5bc2a61a7973"

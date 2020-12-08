@@ -22,6 +22,7 @@
     "@angular/platform-browser-dynamic": "^9.1.12",
     "@polpware/fe-utilities": "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git",
     "core-js": "^3.1.4",
+    "ngx-bootstrap": "6.0.0",
     "ngx-chips": "2.2.0",
     "rxjs": "~6.6.2",
     "tslib": "^1.10.0",
