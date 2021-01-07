@@ -25,6 +25,10 @@
       "@polpware/ngx-email-composer": [
         "dist/polpware/ngx-email-composer/polpware-ngx-email-composer",
         "dist/polpware/ngx-email-composer"
+      ],
+      "@polpware/ngx-form-common": [
+        "dist/polpware/ngx-form-common/polpware-ngx-form-common",
+        "dist/polpware/ngx-form-common"
       ]
     }
   }

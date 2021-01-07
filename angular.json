@@ -219,6 +219,46 @@
                     }
                 }
             }
+        },
+        "@polpware/ngx-form-common": {
+            "projectType": "library",
+            "root": "projects/polpware/ngx-form-common",
+            "sourceRoot": "projects/polpware/ngx-form-common/src",
+            "prefix": "lib",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "options": {
+                        "tsConfig": "projects/polpware/ngx-form-common/tsconfig.lib.json",
+                        "project": "projects/polpware/ngx-form-common/ng-package.json"
+                    },
+                    "configurations": {
+                        "production": {
+                            "tsConfig": "projects/polpware/ngx-form-common/tsconfig.lib.prod.json"
+                        }
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/polpware/ngx-form-common/src/test.ts",
+                        "tsConfig": "projects/polpware/ngx-form-common/tsconfig.spec.json",
+                        "karmaConfig": "projects/polpware/ngx-form-common/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "projects/polpware/ngx-form-common/tsconfig.lib.json",
+                            "projects/polpware/ngx-form-common/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
         }
     },
     "defaultProject": "ngx-form-host"
