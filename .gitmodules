@@ -7,3 +7,6 @@
 [submodule "deployment/polpware-ngx-email-composer"]
 	path = deployment/polpware-ngx-email-composer
 	url = https://github.com/polpware-frontend-modules/polpware-ngx-email-composer
+[submodule "deployment/polpware-ngx-form-common"]
+	path = deployment/polpware-ngx-form-common
+	url = https://github.com/polpware-frontend-modules/polpware-ngx-form-common
