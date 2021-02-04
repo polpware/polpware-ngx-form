@@ -7,10 +7,10 @@ import { IHasNotifications } from '../interfaces/has-notifications.interface';
  * Models the inputs for the default reusable form.
  */
 export interface IDefaultFormInputs {
-    hideCancelBtn: boolean;
-    hideSubmitBtn: boolean;
-    submitBtnTxt: string;
-    cancelBtnTxt: string;
+    hideCancelBtn?: boolean;
+    hideSubmitBtn?: boolean;
+    submitBtnTxt?: string;
+    cancelBtnTxt?: string;
 }
 
 /**
