@@ -1,6 +1,6 @@
 {
   "name": "@polpware/ngx-form-common",
-  "version": "9.2.0",
+  "version": "9.2.1",
   "peerDependencies": {
     "@angular/common": "^9.1.12",
     "@angular/core": "^9.1.12"
