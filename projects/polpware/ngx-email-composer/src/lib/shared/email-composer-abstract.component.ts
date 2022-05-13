@@ -1,4 +1,4 @@
-import { ElementRef, ViewChild, Input, Output, EventEmitter } from '@angular/core';
+import { ElementRef, ViewChild, Input, Output, EventEmitter, Directive } from '@angular/core';
 import { TagInputComponent } from 'ngx-chips';
 import { Observable } from 'rxjs';
 
@@ -89,6 +89,7 @@ export interface IEmailComposerInput {
     emails?: Array<any>;
 }
 
+@Directive()
 export abstract class EmailFormAbstractComponent {
 
     @ViewChild('emailInputBox') emailInputBox: TagInputComponent;
