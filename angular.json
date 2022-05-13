@@ -67,13 +67,6 @@
                     },
                     "defaultConfiguration": ""
                 },
-                "lib": {
-                    "builder": "@angular-devkit/build-angular:ng-packagr",
-                    "options": {
-                        "tsConfig": "projects/ngx-form-host/tsconfig.lib.json",
-                        "project": "ng-package.json"
-                    }
-                },
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
