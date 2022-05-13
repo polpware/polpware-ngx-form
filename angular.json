@@ -43,7 +43,6 @@
                             "optimization": true,
                             "outputHashing": "all",
                             "sourceMap": false,
-                            "extractCss": true,
                             "namedChunks": false,
                             "aot": true,
                             "extractLicenses": true,
@@ -64,7 +63,7 @@
                     }
                 },
                 "lib": {
-                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
                         "tsConfig": "projects/ngx-form-host/tsconfig.lib.json",
                         "project": "ng-package.json"
@@ -147,7 +146,7 @@
             "prefix": "lib",
             "architect": {
                 "build": {
-                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
                         "tsConfig": "projects/polpware/ngx-input-validators/tsconfig.lib.json",
                         "project": "projects/polpware/ngx-input-validators/ng-package.json"
@@ -187,7 +186,7 @@
             "prefix": "polp",
             "architect": {
                 "build": {
-                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
                         "tsConfig": "projects/polpware/ngx-email-composer/tsconfig.lib.json",
                         "project": "projects/polpware/ngx-email-composer/ng-package.json"
@@ -227,7 +226,7 @@
             "prefix": "lib",
             "architect": {
                 "build": {
-                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
                         "tsConfig": "projects/polpware/ngx-form-common/tsconfig.lib.json",
                         "project": "projects/polpware/ngx-form-common/ng-package.json"
