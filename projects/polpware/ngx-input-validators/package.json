@@ -1,10 +1,10 @@
 {
     "name": "@polpware/ngx-input-validators",
-    "version": "9.0.3",
+    "version": "13.0.0",
     "peerDependencies": {
-        "@angular/common": "^9.1.12",
-        "@angular/core": "^9.1.12",
-        "url-parse": "^1.4.4"            
+        "@angular/common": "^13.0.0",
+        "@angular/core": "^13.0.0",
+        "url-parse": "^1.5.0"            
     },
     "dependencies": {
       "tslib": "^2.0.0"

@@ -1,10 +1,10 @@
 {
   "name": "@polpware/ngx-email-composer",
-  "version": "9.0.3",
+  "version": "13.0.0",
   "peerDependencies": {
-    "@angular/common": "^9.1.12",
-    "@angular/core": "^9.1.12",
-    "ngx-chips": "2.2.0"      
+    "@angular/common": "^13.0.0",
+    "@angular/core": "^13.0.0",
+    "ngx-chips": "3.0.0"      
   },
   "dependencies": {
     "tslib": "^2.0.0"
