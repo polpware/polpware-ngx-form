@@ -2056,6 +2056,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx13":
+  version: 13.0.0
+  resolution: "@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#commit=5a1648869ec4c4075189cb08382031bd19ac15aa"
+  dependencies:
+    tslib: ^2.3.0
+  peerDependencies:
+    "@angular/common": ^13.2.0
+    "@angular/core": ^13.2.0
+    moment: ^2.0.0
+  checksum: 27f5a107bde19961e8e40431a20d11d0a2f0666580683e255420f38d23e1c7d412d4791395f4ac26fa84a6fec7730db225f84fb9dda5839e06e49e6d333392d6
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-json@npm:^4.1.0":
   version: 4.1.0
   resolution: "@rollup/plugin-json@npm:4.1.0"
@@ -7673,6 +7686,46 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ng2-material-dropdown@npm:>=1.0.0":
+  version: 1.0.0
+  resolution: "ng2-material-dropdown@npm:1.0.0"
+  dependencies:
+    tslib: ^2.0.0
+  checksum: 8c3f9ea6ca0e298c8b235995db3400193b8fdcbed4f53b3f726b655ee58fcfc750b9b00ddf82d388e4d28fcae510b301d448f82937d8f0503d3c59d8a71f1eda
+  languageName: node
+  linkType: hard
+
+"ngx-bootstrap@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "ngx-bootstrap@npm:8.0.0"
+  dependencies:
+    tslib: ^2.0.0
+  peerDependencies:
+    "@angular/animations": ^13.0.0
+    "@angular/common": ^13.0.0
+    "@angular/core": ^13.0.0
+    "@angular/forms": ^13.0.0
+    rxjs: ^6.5.3 || ^7.4.0
+  checksum: 2336403a593339b87e9d026fd87bb1e261485d638101020c1bc4c46ec4a1861a98c73afd895494ac7f65a4cbe663df7e05da36d4d416903b7074006bf2a3f47c
+  languageName: node
+  linkType: hard
+
+"ngx-chips@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "ngx-chips@npm:3.0.0"
+  dependencies:
+    ng2-material-dropdown: ">=1.0.0"
+    tslib: ^2.3.0
+  peerDependencies:
+    "@angular/animations": ">=10.1.5"
+    "@angular/common": ">=10.1.5"
+    "@angular/compiler": ">=10.1.5"
+    "@angular/core": ">=10.1.5"
+    "@angular/forms": ">=10.1.5"
+  checksum: 21172f30533375a4d9d19d3cbfc9167221510b4d4bf6db774352183ed696b226bb89325e3b632b1226432e3cef0da78ca5b5b6972ab6c4af216ce67eb12803ed
+  languageName: node
+  linkType: hard
+
 "ngx-form-host@workspace:.":
   version: 0.0.0-use.local
   resolution: "ngx-form-host@workspace:."
@@ -7688,6 +7741,7 @@ __metadata:
     "@angular/language-service": ~13.3.8
     "@angular/platform-browser": ^13.3.8
     "@angular/platform-browser-dynamic": ^13.3.8
+    "@polpware/fe-utilities": "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx13"
     "@types/jasmine": ~3.6.0
     "@types/jasminewd2": ~2.0.3
     "@types/node": ^12.11.1
@@ -7701,12 +7755,15 @@ __metadata:
     karma-jasmine: ~4.0.0
     karma-jasmine-html-reporter: ^1.5.0
     ng-packagr: ^13.3.1
+    ngx-bootstrap: ^8.0.0
+    ngx-chips: ^3.0.0
     protractor: ~7.0.0
     rxjs: ~6.6.2
     ts-node: ~8.3.0
     tslib: ^2.0.0
     tslint: ~6.1.0
     typescript: ~4.6.4
+    url-parse: ^1.5.10
     zone.js: ~0.11.4
   languageName: unknown
   linkType: soft
@@ -9033,6 +9090,13 @@ __metadata:
   version: 6.5.2
   resolution: "qs@npm:6.5.2"
   checksum: 24af7b9928ba2141233fba2912876ff100403dba1b08b20c3b490da9ea6c636760445ea2211a079e7dfa882a5cf8f738337b3748c8bdd0f93358fa8881d2db8f
+  languageName: node
+  linkType: hard
+
+"querystringify@npm:^2.1.1":
+  version: 2.2.0
+  resolution: "querystringify@npm:2.2.0"
+  checksum: 5641ea231bad7ef6d64d9998faca95611ed4b11c2591a8cae741e178a974f6a8e0ebde008475259abe1621cb15e692404e6b6626e927f7b849d5c09392604b15
   languageName: node
   linkType: hard
 
@@ -10836,6 +10900,16 @@ __metadata:
   dependencies:
     punycode: ^2.1.0
   checksum: 5a91c55d8ae6d9a1ff9dc1b0774888a99aae7cc6e9056c57b709275c0f6753b05cd1a9f2728a1479244b93a9f57ab37c60d277a48d9f2d032d6ae65837bf9bc7
+  languageName: node
+  linkType: hard
+
+"url-parse@npm:^1.5.10":
+  version: 1.5.10
+  resolution: "url-parse@npm:1.5.10"
+  dependencies:
+    querystringify: ^2.1.1
+    requires-port: ^1.0.0
+  checksum: fbdba6b1d83336aca2216bbdc38ba658d9cfb8fc7f665eb8b17852de638ff7d1a162c198a8e4ed66001ddbf6c9888d41e4798912c62b4fd777a31657989f7bdf
   languageName: node
   linkType: hard
 
