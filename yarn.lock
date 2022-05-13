@@ -8428,39 +8428,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ng2-material-dropdown@npm:0.11.0":
-  version: 0.11.0
-  resolution: "ng2-material-dropdown@npm:0.11.0"
-  dependencies:
-    tslib: ^1.9.0
-  peerDependencies:
-    "@angular/animations": ^8.0.0
-    "@angular/common": ^8.0.0
-    "@angular/core": ^8.0.0
-  checksum: 6022aa673d3e20ec3816bee261fd9c6b75d40c2b6ef7eb1e59cab764907b1d8d5ee04d50093bcbb1be62be5c52e379120c7a8eedb270d7907e4bb8ee38a24ed2
-  languageName: node
-  linkType: hard
-
-"ngx-bootstrap@npm:6.0.0":
-  version: 6.0.0
-  resolution: "ngx-bootstrap@npm:6.0.0"
-  peerDependencies:
-    "@angular/common": ">=7.0.0"
-    "@angular/core": ">=7.0.0"
-  checksum: 119d22e00c194e450ed33ab7209e52388763bd1616a38bf214b45695ba9330d1fa589e36053a5a916ec7e50a74dca0d28fb1f0afa61452955bffb5b6d70bdeff
-  languageName: node
-  linkType: hard
-
-"ngx-chips@npm:2.2.0":
-  version: 2.2.0
-  resolution: "ngx-chips@npm:2.2.0"
-  dependencies:
-    ng2-material-dropdown: 0.11.0
-    tslib: ^1.10.0
-  checksum: e68da62196c6a70cf1968b78a81a9c13dd9483ce8a559ce293326f11604e1d7079502b0c20e9603b50ce7394e46b9c1589d8f45b1fd2f64535606bc2173f8d74
-  languageName: node
-  linkType: hard
-
 "ngx-form-host@workspace:.":
   version: 0.0.0-use.local
   resolution: "ngx-form-host@workspace:."
@@ -8490,15 +8457,12 @@ __metadata:
     karma-jasmine: ~2.0.0
     karma-jasmine-html-reporter: ^1.4.0
     ng-packagr: ^9.0.0
-    ngx-bootstrap: 6.0.0
-    ngx-chips: 2.2.0
     protractor: ~5.4.0
     rxjs: ~6.6.2
     ts-node: ~8.3.0
     tslib: ^1.10.0
     tslint: ^5.18.0
     typescript: ~3.8.3
-    url-parse: ^1.4.4
     zone.js: ~0.10.2
   languageName: unknown
   linkType: soft
@@ -12631,7 +12595,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"url-parse@npm:^1.4.3, url-parse@npm:^1.4.4":
+"url-parse@npm:^1.4.3":
   version: 1.4.7
   resolution: "url-parse@npm:1.4.7"
   dependencies:
