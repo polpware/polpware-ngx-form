@@ -1,4 +1,4 @@
-import { Input, Output, EventEmitter } from '@angular/core';
+import { Input, Output, EventEmitter, Directive } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { IHasNotifications } from '../interfaces/has-notifications.interface';
 
@@ -16,6 +16,7 @@ export interface IDefaultFormInputs {
 /**
  * Provides a base for defining a reusable form. 
  */
+@Directive()
 export abstract class DefaultFormBaseComponent implements IHasNotifications {
 
     isSaving: boolean;

@@ -1,12 +1,12 @@
 [submodule "delployment/polpware-ngx-form"]
 	path = deployment/polpware-ngx-form
-	url = https://github.com/polpware-frontend-modules/polpware-ngx-form.git
+	url = https://principleware@github.com/polpware-frontend-modules/polpware-ngx-form.git
 [submodule "deployment/polpware-ngx-input-validators"]
 	path = deployment/polpware-ngx-input-validators
-	url = https://github.com/polpware-frontend-modules/polpware-ngx-input-validators
+	url = https://principleware@github.com/polpware-frontend-modules/polpware-ngx-input-validators
 [submodule "deployment/polpware-ngx-email-composer"]
 	path = deployment/polpware-ngx-email-composer
-	url = https://github.com/polpware-frontend-modules/polpware-ngx-email-composer
+	url = https://principleware@github.com/polpware-frontend-modules/polpware-ngx-email-composer
 [submodule "deployment/polpware-ngx-form-common"]
 	path = deployment/polpware-ngx-form-common
-	url = https://github.com/polpware-frontend-modules/polpware-ngx-form-common
+	url = https://principleware@github.com/polpware-frontend-modules/polpware-ngx-form-common
