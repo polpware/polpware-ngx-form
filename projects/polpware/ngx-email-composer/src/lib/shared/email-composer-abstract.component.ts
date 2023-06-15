@@ -93,7 +93,7 @@ export interface IEmailComposerInput {
 export abstract class EmailFormAbstractComponent {
 
     @ViewChild('emailInputBox') emailInputBox: TagInputComponent;
-    @ViewChild('emailBody') emailBody: ElementRef;
+    @ViewChild('emailBody') emailBody: any;
 
     @Input()
     public messageTitle: string;
@@ -217,7 +217,11 @@ export abstract class EmailFormAbstractComponent {
 
         // Jump to other place
         this.disableFocusEvent = true;
-        this.emailBody.nativeElement.focus();
+        if (this.emailBody && this.emailBody.nativeElement) {
+            this.emailBody.nativeElement.focus();
+        } else if (this.emailBody && this.emailBody.focus) {
+            this.emailBody.focus();
+        }
 
         this.disableFocusEvent = false;
     }
