@@ -1,5 +1,4 @@
 const { src, dest, parallel } = require('gulp');
-const typedoc = require("gulp-typedoc");
 const bumpversion = require('gulp-bump');
 
 // `fs` is used instead of require to prevent caching in watch (require caches)
@@ -11,14 +10,17 @@ function getVersion() {
     });
 };
 
-
  
 function bump() {
 
     const newVer = getVersion().trim();
 
 // bump versions on package/bower/manifest
-    return src(['./package.json'])
+    return src(['./package.json',
+                './projects/polpware/ngx-email-composer/package.json',
+                './projects/polpware/ngx-form-common/package.json',
+                './projects/polpware/ngx-input-validators/package.json'
+               ])
         .pipe(bumpversion({
             version: newVer
         }))
