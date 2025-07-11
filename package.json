@@ -19,7 +19,7 @@
     "@angular/forms": "^17.3.12",
     "@angular/platform-browser": "^17.3.12",
     "@angular/platform-browser-dynamic": "^17.3.12",
-    "@polpware/fe-utilities": "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx16",
+    "@polpware/fe-utilities": "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx17",
     "core-js": "^3.1.4",
     "moment": "^2.30.1",
     "ngx-bootstrap": "^12.0.0",
