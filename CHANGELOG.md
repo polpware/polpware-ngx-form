@@ -1,3 +1,11 @@
+## 16.0.0 (July 11, 2025)
+  - Install libs
+  - Update custom libs
+  - Update deps for Angular 16
+  - Update to Angular 16
+  - Publish Version 15
+  - Bump to Version 15
+
 ## 15.0.0 (July 11, 2025)
   - Install libs
   - Update custom libs
