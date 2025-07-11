@@ -7,6 +7,30 @@ prepare-ngx13:
 	echo "Make sure that we are the ngx13 branch"
 	cd $(DeployTarget) && git checkout ngx13 && git pull
 
+prepare-ngx14:
+	@echo "--> Ensuring branch 'ngx14' exists and is tracking the remote..."
+	cd $(DeployTarget) && \
+	(git checkout ngx14 || (git checkout -b ngx14 && git push -u origin ngx14)) && \
+	git pull
+
+prepare-ngx15:
+	@echo "--> Ensuring branch 'ngx15' exists and is tracking the remote..."
+	cd $(DeployTarget) && \
+	(git checkout ngx15 || (git checkout -b ngx15 && git push -u origin ngx15)) && \
+	git pull
+
+prepare-ngx16:
+	@echo "--> Ensuring branch 'ngx16' exists and is tracking the remote..."
+	cd $(DeployTarget) && \
+	(git checkout ngx16 || (git checkout -b ngx16 && git push -u origin ngx16)) && \
+	git pull
+
+prepare-ngx17:
+	@echo "--> Ensuring branch 'ngx17' exists and is tracking the remote..."
+	cd $(DeployTarget) && \
+	(git checkout ngx17 || (git checkout -b ngx17 && git push -u origin ngx17)) && \
+	git pull
+
 build:
 	echo "Build ..."
 	ng build $(BuildTarget)
