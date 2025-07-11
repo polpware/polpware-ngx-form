@@ -1,5 +1,5 @@
 import { Input, Output, EventEmitter, Directive } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import { IHasNotifications } from '../interfaces/has-notifications.interface';
 
 
@@ -21,7 +21,7 @@ export abstract class DefaultFormBaseComponent implements IHasNotifications {
 
     isSaving: boolean;
 
-    abstract readonly form: FormGroup;
+    abstract readonly form: UntypedFormGroup;
 
     @Input()
     hideCancelBtn: boolean = false;

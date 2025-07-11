@@ -3,20 +3,20 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import * as Url from 'url-parse';
 
 import { buildUrlValidator, normalizeUrl, normalizeHost } from './url-validator';
-import { FormControl } from '@angular/forms';
+import { UntypedFormControl } from '@angular/forms';
 
 describe('urlValidator', () => {
 
     it('A valid url', () => {
         const validator = buildUrlValidator({});
-        const ctrl = new FormControl('http://peeroffers.com');
+        const ctrl = new UntypedFormControl('http://peeroffers.com');
 
         expect(validator(ctrl)).toBeNull();
     });
 
     it('An invalid url', () => {
         const validator = buildUrlValidator();
-        const ctrl = new FormControl('xpeerofferscom');
+        const ctrl = new UntypedFormControl('xpeerofferscom');
 
         const v = validator(ctrl);
 

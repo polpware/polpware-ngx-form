@@ -1,4 +1,4 @@
-import { FormControl } from '@angular/forms';
+import { UntypedFormControl } from '@angular/forms';
 
 import * as Url from 'url-parse';
 
@@ -102,7 +102,7 @@ export function buildUrlValidator(options?: {
 
     const inputs = Object.assign({}, options);
 
-    return function(control: FormControl) {
+    return function(control: UntypedFormControl) {
         const value = control.value;
 
         // Virtually true if there is no any value. 
