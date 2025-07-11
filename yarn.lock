@@ -2663,16 +2663,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx16":
-  version: 16.0.0
-  resolution: "@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#commit=9f8e237915bf8bfa6f649f1f6a65243d01009463"
+"@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx17":
+  version: 17.0.0
+  resolution: "@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#commit=c432c4fc8d41df6b0316bbe08dabd8a2acc008c8"
   dependencies:
     tslib: ^2.3.0
   peerDependencies:
-    "@angular/common": ^16.0.0
-    "@angular/core": ^16.0.0
+    "@angular/common": ^17.0.0
+    "@angular/core": ^17.0.0
     moment: ^2.0.0
-  checksum: 809dbedda4bce8f6ac29fb36deb07d27b45cff899b6e280a383269780bc8a16fd2eb309d056b744bdfded2c1cd26ac2d7eec4eb91bcc4bc2abdfbcb89f270ab4
+  checksum: 103574721ab80b16906d21d91e5b75043d854d7a326def828280e9b395cb7073b292550a2362ebd43fceb2ab5319c3fd2620e90275dd7a09c041696668679007
   languageName: node
   linkType: hard
 
@@ -8701,18 +8701,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ngx-bootstrap@npm:^11.0.0":
-  version: 11.0.2
-  resolution: "ngx-bootstrap@npm:11.0.2"
+"ngx-bootstrap@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "ngx-bootstrap@npm:12.0.0"
   dependencies:
     tslib: ^2.3.0
   peerDependencies:
-    "@angular/animations": ^16.0.0
-    "@angular/common": ^16.0.0
-    "@angular/core": ^16.0.0
-    "@angular/forms": ^16.0.0
-    rxjs: ^6.5.3 || ^7.6.0
-  checksum: 18ea52b3358396d0e1905ba4ead81c649e24d0431bf3645f6eac360a22c35424ee8d15983e92d9198d9502d7ff225fe285e8d80a56db78e68d3392f0d99117cd
+    "@angular/animations": ^17.0.0
+    "@angular/common": ^17.0.0
+    "@angular/core": ^17.0.0
+    "@angular/forms": ^17.0.0
+    rxjs: ^6.5.3 || ^7.4.0
+  checksum: 25b8502c043db86f4298509d9cc75c98446af2cb522d690e46be63c2b3a6ffe6eaf5511856fcba5b374a000d8b48f7206644ab312ae9fd4b8691fe2ad5e27189
   languageName: node
   linkType: hard
 
@@ -8747,7 +8747,7 @@ __metadata:
     "@angular/language-service": ^17.3.12
     "@angular/platform-browser": ^17.3.12
     "@angular/platform-browser-dynamic": ^17.3.12
-    "@polpware/fe-utilities": "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx16"
+    "@polpware/fe-utilities": "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx17"
     "@types/jasmine": ~5.1.8
     "@types/jasminewd2": ~2.0.3
     "@types/node": ^12.11.1
@@ -8765,7 +8765,7 @@ __metadata:
     karma-jasmine-html-reporter: ~2.1.0
     moment: ^2.30.1
     ng-packagr: ^17.3.0
-    ngx-bootstrap: ^11.0.0
+    ngx-bootstrap: ^12.0.0
     ngx-chips: ~3.0.0
     protractor: ~7.0.0
     rxjs: ~6.6.2
