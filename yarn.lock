@@ -2271,16 +2271,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx13":
-  version: 13.0.2
-  resolution: "@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#commit=96345ecea1d48cb0b85b2cc7fe52a363d1eb7d4a"
+"@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx14":
+  version: 14.0.0
+  resolution: "@polpware/fe-utilities@https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#commit=ff83dcdd34442702bb44a1145a5a86325750d2eb"
   dependencies:
     tslib: ^2.3.0
   peerDependencies:
-    "@angular/common": ^13.2.0
-    "@angular/core": ^13.2.0
+    "@angular/common": ^14.0.0
+    "@angular/core": ^14.0.0
     moment: ^2.0.0
-  checksum: a4cc223a8bb9d12744e6529fd0f537bf65981a5b209dab22c95379f05574f8bed58cf78e8f508d1e3071c02e6e8b93db2953291438dab04bd05fa7d6af36d7a2
+  checksum: ed285ffa51a2b9944a837a8aa68c7ff8a318ebb51f3115da937f8c3b10d232bd155f05274050abc3bb31c6fd42c25e70eafdc4d25207d109e32d90c10fc6918b
   languageName: node
   linkType: hard
 
@@ -2500,17 +2500,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jasmine@npm:*":
+"@types/jasmine@npm:*, @types/jasmine@npm:~5.1.8":
   version: 5.1.8
   resolution: "@types/jasmine@npm:5.1.8"
   checksum: 6861d1b51b86ef97aecfaece0ce3a16e1331a7a0b413c74b4dfd587ad74e8b7ae0fec4d463f7debd6dbb3d630bdebd5eadd438e6ece98803df85219569db9901
-  languageName: node
-  linkType: hard
-
-"@types/jasmine@npm:~3.6.0":
-  version: 3.6.11
-  resolution: "@types/jasmine@npm:3.6.11"
-  checksum: ccb4b749dc43b9ccb4365f36b14bdba8aac5ad7fdd00cc693695064acfbddb6b32fd2d59accd7e70b8f3a1eba69b49e8afa263e96f2b29aed565d0b911efe6c4
   languageName: node
   linkType: hard
 
@@ -7270,10 +7263,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jasmine-core@npm:^3.6.0":
-  version: 3.99.1
-  resolution: "jasmine-core@npm:3.99.1"
-  checksum: 4e4a89739d99e471b86c7ccc4c5c244a77cc6d1e17b2b0d87d81266b8415697354d8873f7e764790a10661744f73a753a6e9bcd9b3e48c66a0c9b8a092b071b7
+"jasmine-core@npm:^4.1.0":
+  version: 4.6.1
+  resolution: "jasmine-core@npm:4.6.1"
+  checksum: 4ee017c0667a7615d816df6b265a554554c23457317172dd137edff5aa4203b1768529038558cd8f368abb2e7436fb4a970876512c4ed6fbf5d8ef3dcb53b9f8
   languageName: node
   linkType: hard
 
@@ -7284,19 +7277,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jasmine-core@npm:~3.6.0":
-  version: 3.6.0
-  resolution: "jasmine-core@npm:3.6.0"
-  checksum: d44e19bad4957f43469fc2e779530f03735ad82623b0d9234cff0b630c25af5d615d068a2eec8c865f8766180c580f75e47d38dd8c72a503de0da1b40c888522
+"jasmine-core@npm:~5.8.0":
+  version: 5.8.0
+  resolution: "jasmine-core@npm:5.8.0"
+  checksum: 3119023463fb41443fb2ae2747b6568e3cffaef76f1c907bfef6aa1fe9b281da0f20427d8a31a34868ca20d04eb320a366f6900e935282bd42dbad44f9050873
   languageName: node
   linkType: hard
 
-"jasmine-spec-reporter@npm:~5.0.0":
-  version: 5.0.2
-  resolution: "jasmine-spec-reporter@npm:5.0.2"
+"jasmine-spec-reporter@npm:~7.0.0":
+  version: 7.0.0
+  resolution: "jasmine-spec-reporter@npm:7.0.0"
   dependencies:
     colors: 1.4.0
-  checksum: 3b64fbdd7cab002e1573451a89e3159b0922a365476d988dec90077bc5ee1252b94f6da8bb21e9d4f56cb1d0415a9802c3c96d1106dbdb509d2bb4adf5f8b805
+  checksum: d5dd5ee26aad98158653776111231889b21b6cffa136d712a814058ad099301045fa2b95f887fcdeaa20e2a82c3896ffd43b47e25190ddfc921782b09088224e
   languageName: node
   linkType: hard
 
@@ -7492,16 +7485,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"karma-chrome-launcher@npm:~3.1.0":
-  version: 3.1.1
-  resolution: "karma-chrome-launcher@npm:3.1.1"
+"karma-chrome-launcher@npm:~3.2.0":
+  version: 3.2.0
+  resolution: "karma-chrome-launcher@npm:3.2.0"
   dependencies:
     which: ^1.2.1
-  checksum: 8442219105e1f11a9284fd47f2e21e34720f7e725f25ea08f7525a7ec2088e2c1b65e2def4d7780139d296afc5c30bf4e1d4a839a097eb814031c2f6b379b39f
+  checksum: e1119e4f95dbcdaec937e5d15a9ffea1b7e5c1d7566f7074ff140161983d4a0821ad274d3dcc34aacfb792caf842a39c459ba9c263723faa6a060cca8692d9b7
   languageName: node
   linkType: hard
 
-"karma-coverage-istanbul-reporter@npm:~3.0.2":
+"karma-coverage-istanbul-reporter@npm:~3.0.3":
   version: 3.0.3
   resolution: "karma-coverage-istanbul-reporter@npm:3.0.3"
   dependencies:
@@ -7514,25 +7507,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"karma-jasmine-html-reporter@npm:^1.5.0":
-  version: 1.7.0
-  resolution: "karma-jasmine-html-reporter@npm:1.7.0"
+"karma-jasmine-html-reporter@npm:~2.1.0":
+  version: 2.1.0
+  resolution: "karma-jasmine-html-reporter@npm:2.1.0"
   peerDependencies:
-    jasmine-core: ">=3.8"
-    karma: ">=0.9"
-    karma-jasmine: ">=1.1"
-  checksum: 926c25858ea45115496524749881837de0091e3f8119e0f81a18c377e69fb82f832836b94e08d2a24fbc49aa21b491ae0bb861f07404f144c92bc84f409ef202
+    jasmine-core: ^4.0.0 || ^5.0.0
+    karma: ^6.0.0
+    karma-jasmine: ^5.0.0
+  checksum: 1c3906c8ed4299342702ad6d5a8c735b5adfb1ed5c955bb381a39b9679da8705b21347f712da0eb5e8e2b0d4690927ae67b6a3c23d901e9a7d09f9f05aeb7e98
   languageName: node
   linkType: hard
 
-"karma-jasmine@npm:~4.0.0":
-  version: 4.0.2
-  resolution: "karma-jasmine@npm:4.0.2"
+"karma-jasmine@npm:~5.1.0":
+  version: 5.1.0
+  resolution: "karma-jasmine@npm:5.1.0"
   dependencies:
-    jasmine-core: ^3.6.0
+    jasmine-core: ^4.1.0
   peerDependencies:
-    karma: "*"
-  checksum: bf884704af1fd19816d9f4e96b25e286ff1a57adcabe1f15e3d2b3e9c1da873c1c843b9eab4274c27e63a99f1c3dea864f1f5eca1a10dc065e6e9d5796c207b4
+    karma: ^6.0.0
+  checksum: ebefd1094e7c2b4c854027621d854908166c79cccaabb5a6ba0ace42cd785a9da0a9aad1aa41937956bd4848287eac04886eebfd7c851b927d2132d3563b7739
   languageName: node
   linkType: hard
 
@@ -7545,9 +7538,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"karma@npm:~6.3.20":
-  version: 6.3.20
-  resolution: "karma@npm:6.3.20"
+"karma@npm:~6.4.4":
+  version: 6.4.4
+  resolution: "karma@npm:6.4.4"
   dependencies:
     "@colors/colors": 1.5.0
     body-parser: ^1.19.0
@@ -7568,14 +7561,14 @@ __metadata:
     qjobs: ^1.2.0
     range-parser: ^1.2.1
     rimraf: ^3.0.2
-    socket.io: ^4.4.1
+    socket.io: ^4.7.2
     source-map: ^0.6.1
     tmp: ^0.2.1
     ua-parser-js: ^0.7.30
     yargs: ^16.1.1
   bin:
     karma: bin/karma
-  checksum: 7060afc367c49b2ce2e145f6555c428eadfd72bd68a5d4ae392ec51c8d1c0484706fdd52cfd06d69a811c25517fd5129689a69173be850814dc68c3b7eafa6c8
+  checksum: e7f20379b61892bb08d696b57723a1008627bb7746f214ad33c841229c0531e7e8ba8c94e34fb3ae4aeb7afa1df9774004fb4abc9904c55674676921ea2bb72d
   languageName: node
   linkType: hard
 
@@ -8332,6 +8325,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"moment@npm:^2.30.1":
+  version: 2.30.1
+  resolution: "moment@npm:2.30.1"
+  checksum: 859236bab1e88c3e5802afcf797fc801acdbd0ee509d34ea3df6eea21eb6bcc2abd4ae4e4e64aa7c986aa6cba563c6e62806218e6412a765010712e5fa121ba6
+  languageName: node
+  linkType: hard
+
 "ms@npm:2.0.0":
   version: 2.0.0
   resolution: "ms@npm:2.0.0"
@@ -8479,22 +8479,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ngx-bootstrap@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "ngx-bootstrap@npm:8.0.0"
+"ngx-bootstrap@npm:~9.0.0":
+  version: 9.0.0
+  resolution: "ngx-bootstrap@npm:9.0.0"
   dependencies:
-    tslib: ^2.0.0
+    tslib: ^2.3.0
   peerDependencies:
-    "@angular/animations": ^13.0.0
-    "@angular/common": ^13.0.0
-    "@angular/core": ^13.0.0
-    "@angular/forms": ^13.0.0
+    "@angular/animations": ^14.0.0
+    "@angular/common": ^14.0.0
+    "@angular/core": ^14.0.0
+    "@angular/forms": ^14.0.0
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: 2336403a593339b87e9d026fd87bb1e261485d638101020c1bc4c46ec4a1861a98c73afd895494ac7f65a4cbe663df7e05da36d4d416903b7074006bf2a3f47c
+  checksum: 1e3641841a896cf84e5ae8024b453bfd5efdd4157b529349b2f2640ddf8bbedb397ba8d78e1da2347b02ac5e6a6012b9af9dbec83dd6aefe2a25b8265f0797c1
   languageName: node
   linkType: hard
 
-"ngx-chips@npm:^3.0.0":
+"ngx-chips@npm:~3.0.0":
   version: 3.0.0
   resolution: "ngx-chips@npm:3.0.0"
   dependencies:
@@ -8525,8 +8525,8 @@ __metadata:
     "@angular/language-service": ^14.3.0
     "@angular/platform-browser": ^14.3.0
     "@angular/platform-browser-dynamic": ^14.3.0
-    "@polpware/fe-utilities": "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx13"
-    "@types/jasmine": ~3.6.0
+    "@polpware/fe-utilities": "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx14"
+    "@types/jasmine": ~5.1.8
     "@types/jasminewd2": ~2.0.3
     "@types/node": ^12.11.1
     codelyzer: ^6.0.0
@@ -8534,16 +8534,17 @@ __metadata:
     gulp: ^5.0.1
     gulp-bump: ^3.2.0
     gulp-ignore: ^3.0.0
-    jasmine-core: ~3.6.0
-    jasmine-spec-reporter: ~5.0.0
-    karma: ~6.3.20
-    karma-chrome-launcher: ~3.1.0
-    karma-coverage-istanbul-reporter: ~3.0.2
-    karma-jasmine: ~4.0.0
-    karma-jasmine-html-reporter: ^1.5.0
+    jasmine-core: ~5.8.0
+    jasmine-spec-reporter: ~7.0.0
+    karma: ~6.4.4
+    karma-chrome-launcher: ~3.2.0
+    karma-coverage-istanbul-reporter: ~3.0.3
+    karma-jasmine: ~5.1.0
+    karma-jasmine-html-reporter: ~2.1.0
+    moment: ^2.30.1
     ng-packagr: ^14.2.2
-    ngx-bootstrap: ^8.0.0
-    ngx-chips: ^3.0.0
+    ngx-bootstrap: ~9.0.0
+    ngx-chips: ~3.0.0
     protractor: ~7.0.0
     rxjs: ~6.6.2
     ts-node: ~8.3.0
@@ -11066,7 +11067,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"socket.io@npm:^4.4.1":
+"socket.io@npm:^4.7.2":
   version: 4.8.1
   resolution: "socket.io@npm:4.8.1"
   dependencies:
