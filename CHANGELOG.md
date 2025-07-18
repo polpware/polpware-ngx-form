@@ -1,3 +1,11 @@
+## 19.0.0 (July 18, 2025)
+  - Install libs
+  - Update custom libs
+  - Update deps
+  - Update for Angular 19
+  - Publish Version 18
+  - Bump to Version 18
+
 ## 18.0.0 (July 18, 2025)
   - Install libs
   - Install libs
