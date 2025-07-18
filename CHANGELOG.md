@@ -1,3 +1,13 @@
+## 18.0.0 (July 18, 2025)
+  - Install libs
+  - Install libs
+  - Update custom libs
+  - Update deps
+  - Update to Angular 18
+  - Update tooltip
+  - Publish Version 17
+  - Bump to Version 17
+
 ## 17.0.0 (July 11, 2025)
   - Update custom lib
   - Update deps for Angular 17
