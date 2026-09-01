@@ -20,7 +20,7 @@
     "@angular/platform-browser": "^19.2.14",
     "@angular/platform-browser-dynamic": "^19.2.14",
     "@polpware/fe-utilities": "https://github.com/polpware-frontend-modules/polpware-fe-utilities.git#ngx19",
-    "core-js": "^3.1.4",
+    "core-js": "^3.50.0",
     "moment": "^2.30.1",
     "ngx-bootstrap": "^19.0.0",
     "ngx-chips": "~3.0.0",
@@ -48,11 +48,11 @@
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage-istanbul-reporter": "~3.0.3",
     "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.1.0",
+    "karma-jasmine-html-reporter": "~2.3.0",
     "ng-packagr": "^19.2.2",
     "protractor": "~7.0.0",
     "ts-node": "~10.9.x",
     "typescript": "~5.8.3",
-    "typescript-eslint": "^8.0.0"
+    "typescript-eslint": "^8.68.0"
   }
 }
